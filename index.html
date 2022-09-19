@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>JTGeats</title>
+  </head>
+  <body>
+    
+    <div class="container">
+      <div class="landing_section" id="Home">
+        <div class="navbar">
+          <div class="logo_section">
+            <h1 class="logo">JTGeats</h1>
+          </div>
+          <div class="nav_section">
+            <div class="nav">
+              <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Menu">About</a></li>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="#Blog">Blog</a></li>
+                <li><a href="#Contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="search_cart">
+              <div class="search">
+                <img src="./search.png" alt="No_img_found" />
+              </div>
+              <div class="cart" id="mpopupLink">
+                <img src="./cart.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <span id="mpopupBox1" class="mpopup close1" onclick="closeNow()" style="display:None;">
+          <div id='requestdishmodal' class='requestdishmodal'>
+            <div id='requestadish' class='requestadish'>
+            Request a Dish</div>
+            <div id='frame42' class='frame42'>
+              <button id='button' class='button'>
+              <div id='cancel' class='cancel'>
+              Cancel</div>
+              </button>
+              <button id='button2' class='button2'>
+              <div id='submitrequest' class='submitrequest'>
+              Submit Request</div>
+              </button>
+            </div>
+            <div id='frame45' class='frame45'>
+              <div id='frame46' class='frame46'>
+                <div id='inputfield' class='inputfield'>
+                  <div id='input2' class='input2'>
+                    <div id='placeholder' class='placeholder'>
+                    Enter name of the dish</div>
+                  </div>
+                  <div id='label' class='label'>
+                  Name*</div>
+                </div>
+              </div>
+              <input id='textfield' class='textfield' type='text' placeholder='Paste a URLUpload an image'  />
+            </div>
+          </div>
+        </span>
+        <span id="mpopupBox" class="mpopup close" style="display: None;">
+          <div id='cartmodal' class='cartmodal'>
+            <div id='akar-icons:shopping-bag' class='akar-icons:shopping-bag'>
+              Image
+            </div>
+            <div id='frame34' class='frame34'>
+              <div id='cartisempty' class='cartisempty'>
+              Cart is Empty</div>
+              <div id='addsomeitemstothecarttocheckout' class='addsomeitemstothecarttocheckout'>
+              Add some items to the cart to checkout</div>
+            </div>
+            <button id='button' class='button'>
+            <div id='backtomenu' class='backtomenu'>
+            Back to Menu</div>
+            </button>
+          </div>
+        </span>
+        <div class="front_screen">
+          <div class="heading">
+            <div class="sub_heading">
+              <h1>Authentic Home food in India</h1>
+              <p>
+                JtGeats is a courier service in which authentic home cook food
+                is delivered to a customer
+              </p>
+              <div class="front_search">
+                <div class="search_food">
+                  <input type="text" placeholder="Search food you love" />
+                </div>
+                <div class="search_button">
+                  <button>Search</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="front_img_section">
+            <div class="front_img1">
+              <div class="front_img2">
+                <div class="jar_pot">
+                  <div class="front_img3"></div>
+                  <div class="front_img4"></div>
+                </div>
+              </div>
+              <div class="front_img5"></div>
+            </div>
+            <!-- <img src="./background-complete.png" alt="" />
+            <img src="./" alt="" />
+            <img src="./cuate.jpg" alt="" />
+            <img src="./cuate.jpg" alt="" />
+            <img src="./cuate.jpg" alt="" /> -->
+          </div>
+        </div>
+      </div>
+      <!-- ------------------------------------------------ -->
+      <div class="kitchen_section" id="Menu">
+        <div class="kitchen_sub_section">
+          <h2>Home Kitchen</h2>
+          <div class="kitchen_cards">
+            <div class="cards_row">
+              <div class="card">
+                <div class="card_img">
+                  <img src="./img1.png" alt="" />
+                </div>
+                <div class="card_content">
+                  <div class="card_discription">
+                    <div class="card_name">
+                      <p>Home made pizza</p>
+                      <p>&#8377; 190</p>
+                    </div>
+                    <div class="card_rating_add">
+                      <div class="card_rating">
+                        <img src="./Vector.png" alt="" />
+                        <p>4.7 (50-79 min)</p>
+                      </div>
+                      <div class="card_add">
+                        <img src="./plus.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card_img">
+                  <img src="./img2.png" alt="" />
+                </div>
+                <div class="card_content">
+                  <div class="card_discription">
+                    <div class="card_name">
+                      <p>Home made pizza</p>
+                      <p>&#8377; 190</p>
+                    </div>
+                    <div class="card_rating_add">
+                      <div class="card_rating">
+                        <img src="./Vector.png" alt="" />
+                        <p>4.7 (50-79 min)</p>
+                      </div>
+                      <div class="card_add">
+                        <img src="./plus.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card_img">
+                  <img src="./img3.png" alt="" />
+                </div>
+                <div class="card_content">
+                  <div class="card_discription">
+                    <div class="card_name">
+                      <p>Home made pizza</p>
+                      <p>&#8377; 190</p>
+                    </div>
+                    <div class="card_rating_add">
+                      <div class="card_rating">
+                        <img src="./Vector.png" alt="" />
+                        <p>4.7 (50-79 min)</p>
+                      </div>
+                      <div class="card_add">
+                        <img src="./plus.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card_img">
+                  <img src="./img4.png" alt="" />
+                </div>
+                <div class="card_content">
+                  <div class="card_discription">
+                    <div class="card_name">
+                      <p>Home made pizza</p>
+                      <p>&#8377; 190</p>
+                    </div>
+                    <div class="card_rating_add">
+                      <div class="card_rating">
+                        <img src="./Vector.png" alt="" />
+                        <p>4.7 (50-79 min)</p>
+                      </div>
+                      <div class="card_add">
+                        <img src="./plus.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards_row">
+              <div class="card">
+                <div class="card_img">
+                  <img src="./img5.png" alt="" />
+                </div>
+                <div class="card_content">
+                  <div class="card_discription">
+                    <div class="card_name">
+                      <p>Home made pizza</p>
+                      <p>&#8377; 190</p>
+                    </div>
+                    <div class="card_rating_add">
+                      <div class="card_rating">
+                        <img src="./Vector.png" alt="" />
+                        <p>4.7 (50-79 min)</p>
+                      </div>
+                      <div class="card_add">
+                        <img src="./plus.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card_img">
+                  <img src="./img6.png" alt="" />
+                </div>
+                <div class="card_content">
+                  <div class="card_discription">
+                    <div class="card_name">
+                      <p>Home made pizza</p>
+                      <p>&#8377; 190</p>
+                    </div>
+                    <div class="card_rating_add">
+                      <div class="card_rating">
+                        <img src="./Vector.png" alt="" />
+                        <p>4.7 (50-79 min)</p>
+                      </div>
+                      <div class="card_add">
+                        <img src="./plus.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card_img">
+                  <img src="./img7.png" alt="" />
+                </div>
+                <div class="card_content">
+                  <div class="card_discription">
+                    <div class="card_name">
+                      <p>Home made pizza</p>
+                      <p>&#8377; 190</p>
+                    </div>
+                    <div class="card_rating_add">
+                      <div class="card_rating">
+                        <img src="./Vector.png" alt="" />
+                        <p>4.7 (50-79 min)</p>
+                      </div>
+                      <div class="card_add">
+                        <img src="./plus.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card_img">
+                  <img src="./img8.png" alt="" />
+                </div>
+                <div class="card_content">
+                  <div class="card_discription">
+                    <div class="card_name">
+                      <p>Home made pizza</p>
+                      <p>&#8377; 190</p>
+                    </div>
+                    <div class="card_rating_add">
+                      <div class="card_rating">
+                        <img src="./Vector.png" alt="" />
+                        <p>4.7 (50-79 min)</p>
+                      </div>
+                      <div class="card_add">
+                        <img src="./plus.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- --------------------------------------------- -->
+            <div class="cards_row">
+              <div class="card">
+                <div class="card_img">
+                  <img src="./img9.png" alt="" />
+                </div>
+                <div class="card_content">
+                  <div class="card_discription">
+                    <div class="card_name">
+                      <p>Home made pizza</p>
+                      <p>&#8377; 190</p>
+                    </div>
+                    <div class="card_rating_add">
+                      <div class="card_rating">
+                        <img src="./Vector.png" alt="" />
+                        <p>4.7 (50-79 min)</p>
+                      </div>
+                      <div class="card_add">
+                        <img src="./plus.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card_img">
+                  <img src="./img10.png" alt="" />
+                </div>
+                <div class="card_content">
+                  <div class="card_discription">
+                    <div class="card_name">
+                      <p>Home made pizza</p>
+                      <p>&#8377; 190</p>
+                    </div>
+                    <div class="card_rating_add">
+                      <div class="card_rating">
+                        <img src="./Vector.png" alt="" />
+                        <p>4.7 (50-79 min)</p>
+                      </div>
+                      <div class="card_add">
+                        <img src="./plus.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card_img">
+                  <img src="./img11.png" alt="" />
+                </div>
+                <div class="card_content">
+                  <div class="card_discription">
+                    <div class="card_name">
+                      <p>Home made pizza</p>
+                      <p>&#8377; 190</p>
+                    </div>
+                    <div class="card_rating_add">
+                      <div class="card_rating">
+                        <img src="./Vector.png" alt="" />
+                        <p>4.7 (50-79 min)</p>
+                      </div>
+                      <div class="card_add">
+                        <img src="./plus.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card_img">
+                  <img src="./img12.png" alt="" />
+                </div>
+                <div class="card_content">
+                  <div class="card_discription">
+                    <div class="card_name">
+                      <p>Home made pizza</p>
+                      <p>&#8377; 190</p>
+                    </div>
+                    <div class="card_rating_add">
+                      <div class="card_rating">
+                        <img src="./Vector.png" alt="" />
+                        <p>4.7 (50-79 min)</p>
+                      </div>
+                      <div class="card_add">
+                        <img src="./plus.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- --------------------------------card-row section -->
+          </div>
+        </div>
+        <!---------------------------- This is kitchen popular section ---------------------------- -->
+        <div class="kitchen_popular_section">
+          <h2>Popular Items</h2>
+          <div class="cards_row1">
+            <div class="left_arrow">
+              <img src="./Left_arrow.png" alt="" />
+            </div>
+            <div class="card">
+              <div class="card_img">
+                <img src="./img1.png" alt="" />
+              </div>
+              <div class="card_content">
+                <div class="card_discription">
+                  <div class="card_name">
+                    <p>Home made pizza</p>
+                    <p>&#8377; 190</p>
+                  </div>
+                  <div class="card_rating_add">
+                    <div class="card_rating">
+                      <img src="./Vector.png" alt="" />
+                      <p>4.7 (50-79 min)</p>
+                    </div>
+                    <div class="card_add">
+                      <img src="./plus.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------------------------ -->
+            <div class="card">
+              <div class="card_img">
+                <img src="./img13.png" alt="" />
+              </div>
+              <div class="card_content">
+                <div class="card_discription">
+                  <div class="card_name">
+                    <p>Tandoori Chicken</p>
+                    <p>&#8377; 184</p>
+                  </div>
+                  <div class="card_rating_add">
+                    <div class="card_rating">
+                      <img src="./Vector.png" alt="" />
+                      <p>4.73 (15-29 min)</p>
+                    </div>
+                    <div class="card_add">
+                      <img src="./plus.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- -------------------------------------cards ------------------------ -->
+            <div class="card">
+              <div class="card_img">
+                <img src="./img14.png" alt="" />
+              </div>
+              <div class="card_content">
+                <div class="card_discription">
+                  <div class="card_name">
+                    <p>Chilli Chicken</p>
+                    <p>&#8377; 116</p>
+                  </div>
+                  <div class="card_rating_add">
+                    <div class="card_rating">
+                      <img src="./Vector.png" alt="" />
+                      <p>4.1 (30-40 min)</p>
+                    </div>
+                    <div class="card_add">
+                      <img src="./plus.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- -------------------------------------cards ------------------------ -->
+            <div class="right_arrow">
+              <img src="./Right_arrow.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="request_dish_button" id="mpopupLink1">
+          <button id="mpopupLink">Request a Dish</button>
+        </div>
+      </div>
+      <!-- =================service_section================================ -->
+      <div class="service_section" id="Blog">
+        <div class="service_sub_section">
+          <div class="service_heading">
+            <h1>We are providing best</h1>
+            <h1>home cooked food delivery service.</h1>
+            <p>Away from home and craving the tasty homemade recipes ?</p>
+            <p>Choose from a selection of our delicious home cooked dishes</p>
+          </div>
+          <div class="service_card">
+            <img src="./service_card.png" alt="" />
+          </div>
+        </div>
+        <div class="service_background"></div>
+      </div>
+      <!-- ===========================contact_section started===============================-->
+      <div class="contactUs_section" id="Contact">
+        <div class="contactUs_sub_section">
+          <div class="contact_field">
+            <div class="contact_name">
+              <h2>Do you have a question</h2>
+              <h2>or want to become a seller ?</h2>
+              <p>
+                Fill this form and our manager will contact you next 48 hours.
+              </p>
+            </div>
+            <div class="contact_inputField">
+              <div class="contact_input">
+                <input type="text" placeholder="Your Name" />
+                <input type="email" placeholder="Your e-mail" />
+              </div>
+              <textarea
+              name=""
+              id=""
+              cols="64"
+              rows="8"
+              placeholder="Your Message"
+              ></textarea>
+              <button>Submit</button>
+            </div>
+          </div>
+          <div class="contact_img">
+            <img src="./contact_img.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- ----------------------------------------- -->
+      <div class="footer">
+        <div class="navbar">
+          <div class="logo_section">
+            <h1 class="logo">JTGeats</h1>
+          </div>
+          <div class="nav_section">
+            <div class="nav">
+              <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+              </ul>
+            </div>
+            <div class="search_cart">
+              <div class="search">
+                <img src="./facebooks.png" alt="No_img_found" />
+              </div>
+              <div class="cart">
+                <img src="./instagram.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer_line">
+          <div class="line">
+          </div>
+          
+          <br>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+    // Select modal
+    var mpopup = document.getElementById('mpopupBox');
+    // Select trigger link
+    var mpLink = document.getElementById("mpopupLink");
+    // Select close action element
+    var close = document.getElementsByClassName("close")[0];
+    
+    // Open modal once the link is clicked
+    mpLink.onclick = function() {
+    mpopup.style.display = "block";
+    };
+    // Close modal once close element is clicked
+    close.onclick = function() {
+    mpopup.style.display = "none";
+    };
+    // Close modal when user clicks outside of the modal box
+    window.onclick = function(event) {
+    if (event.target == mpopup) {
+    mpopup.style.display = "none";
+    }};
+    
+    var mpopup1 = document.getElementById('mpopupBox1');
+    // Select trigger link
+    var mpLink1 = document.getElementById("mpopupLink1");
+    // Select close action element
+    var close1 = document.getElementsByClassName("close1")[0];
+    
+    // Open modal once the link is clicked
+    mpLink1.onclick = function() {
+    mpopup1.style.display = "block";
+    };
+    // Close1 modal once close1 element is clicked
+    close1.onclick = function() {
+    mpopup1.style.display = "none";
+    };
+    // Close1 modal when user clicks outside of the modal box
+    window.onclick = function(event) {
+    if (event.target == mpopup1) {
+    mpopup1.style.display = "none";
+    }
+    };
+    </script>
+  </body>
+</html>
